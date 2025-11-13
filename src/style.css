@@ -97,6 +97,66 @@ main {
   background-color: rgb(13, 91, 169);
 }
 
+
+.examples{
+  display: flex;
+  gap: 2rem;
+}
+
+.card-example {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15rem;
+  height: 10rem;
+  padding: .8rem;
+  background-color: #fff;
+  border-radius: .4rem;
+  box-shadow: 1px 1px 11px -7px #000;
+}
+
+.card-texts{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: .4rem;
+}
+
+.card-title {
+  font-size: .8rem;
+  color: #1976d2;
+}
+
+.card-text {
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card-btn {
+  background-color: rgba(25, 118, 210, .2);
+  outline: none;
+  border: 1px solid rgba(25, 118, 210, .5);
+  padding: .4rem 2rem;
+  border-radius: .4rem;
+  font-weight: 600;
+  color: rgb(13, 74, 135);
+  cursor: pointer;
+  transition: ease-in-out .2s;
+}
+
+.card-btn:hover {
+  background-color: rgb(13, 91, 169);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
 .analysis-response{
   display: none;
   background: rgba(0, 0, 0, 0.05);
