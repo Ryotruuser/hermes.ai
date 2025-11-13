@@ -4,14 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css">
-    <title>X-ray Text</title>
+    <title>Hermes.AI</title>
   </head>
   <body>
 
     <header>
-      <h1>X-RAY TEXT</h1>
+      <h1>Hermes Insights</h1>
     </header>
     
+
+    <main>
+      <form id="form-text">
+        <textarea name="textForAnalysis" id="main-text" placeholder="Digite seu e-mail/texto aqui"></textarea>
+
+        <ul>
+          <li onclick="getElementById('main-text').innerHTML = 'TESTETESTE'">Exemplo de e-mail produtivo</li>
+          <li>Exemplo de e-mail produtivo</li>
+          <li>Exemplo de e-mail produtivo</li>
+        </ul>
+        <input type="file">
+        <button type="submit">Analisar texto</button>
+      </form>
+
+      <div class="analysis-response">
+
+        <div class="category-container">
+          <h4>Categoria: <span>#improdutivo</span></h4>
+        </div>
+
+
+        <textarea name="" id="" disabled>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis iste molestiae dolorem delectus cumque quisquam possimus suscipit non voluptate dicta? Inventore deserunt natus debitis ratione incidunt in pariatur, vel aspernatur.
+        </textarea>
+
+        <img src="./img/copy.png" alt="" class="copy-icon">
+      </div>
+
+
+    </main>
 
 
 
