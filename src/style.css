@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  border: 1px solid red;
+  width: 1px;
+}
+
+header > h1 {
+  border-bottom: 1px solid gray;
+}
