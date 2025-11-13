@@ -1,3 +1,13 @@
+:root {
+  --productive-bg: rgb(231, 248, 242);
+  --productive-border: rgb(179, 201, 194);
+  --productive-color: #10b981;
+
+  --unproductive-bg: #f0f1f2;
+  --unproductive-border: #dbdcdf;
+  --unproductive-color: #6b7280;
+}
+
 * {
   font-family:"Poppins", sans-serif;
   box-sizing: border-box;
@@ -17,7 +27,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center; 
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   box-shadow: 5px 5px 15px -13px #000;
 }
 
@@ -149,20 +159,85 @@ main {
   color: #fff;
 }
 
+.analysis-section{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  width: 49rem;
+  margin-bottom: 10rem;
+  background: #fff;
+  border-radius: .4rem;
+  text-align: start;
+  padding: 1rem;
+  box-shadow: 1px 1px 11px -7px #000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+.analysis-title{
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
 
+.category-title{
+  font-size: .75rem;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--unproductive-color);
+}
 
+#category-section{
+  border: 1px solid var(--productive-border);
+  background-color: var(--productive-bg);
+  width: 6rem;
+  padding:.4rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  border-radius: .8rem;
 
+}
 
+.dot {
+  width: .6rem;
+  height: .6rem;
+  background-color: var(--productive-color);
+  border-radius: 50%;
+}
 
+.category {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--productive-color);
+}
 
+.response-title{
+  font-size: .75rem;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--unproductive-color);
+}
 
-.analysis-response{
-  display: none;
-  background: rgba(0, 0, 0, 0.05);
+.response-suggestion{
+  display: flex;
+  align-items: center;
+  padding: .8rem;
+  background-color: var(--unproductive-bg);
+  border-radius: .4rem;
+  gap: 1rem;
+}
+
+.response{
+  font-size: .875rem;
+  text-align: justify;
 }
 
 .copy-icon{
-  width: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
 }
 
