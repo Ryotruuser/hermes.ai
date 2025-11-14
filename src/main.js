@@ -5,7 +5,7 @@ const mainContainer = document.querySelector('main');
 const exampleButtons = document.querySelectorAll(".card-btn"); 
 
 const LOADING_ID = "analysis-loading-section"; 
-const ANALYSIS_URL = "http://127.0.0.1:8000/analisar_upload";
+const ANALYSIS_URL = "https://hermes-ai-upxq.onrender.com/analisar_upload";
 
 
 function removerResultadosAnteriores() {

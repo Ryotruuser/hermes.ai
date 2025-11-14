@@ -9,9 +9,6 @@ from pydantic import BaseModel
 from google import genai
 from google.genai import types
 
-# --- Configurações ---
-GEMINI_API_KEY = "AIzaSyAxoHLgBanIMgbEh4CyMsdoY8RcdwC5_kk" # Sua chave
-
 try:
     client = genai.Client(api_key=GEMINI_API_KEY)
 except Exception as e:
@@ -22,10 +19,8 @@ app = FastAPI()
 
 # Configuração do CORS
 origins = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:3000",
-    "http://127.0.0.1:8000",
+    "https://hermes-ai-inky.vercel.app",
+    "http://localhost:5173"
 ]
 
 app.add_middleware(
@@ -164,10 +159,3 @@ async def analisar_email_upload(
          raise HTTPException(status_code=500, detail=analysis_result.get("resposta"))
 
     return analysis_result
-
-# --- Execução Local (Sem alteração) ---
-
-if __name__ == "__main__":
-    import uvicorn
-    # O backend rodará em http://127.0.0.1:8000
-    uvicorn.run(app, host="127.0.0.1", port=8000)
