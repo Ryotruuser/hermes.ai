@@ -188,9 +188,7 @@ main {
 }
 
 #category-section{
-  border: 1px solid var(--productive-border);
-  background-color: var(--productive-bg);
-  width: 6rem;
+  width: 8rem;
   padding:.4rem;
   display: flex;
   align-items: center;
@@ -202,14 +200,13 @@ main {
 .dot {
   width: .6rem;
   height: .6rem;
-  background-color: var(--productive-color);
   border-radius: 50%;
+  padding: .2rem;
 }
 
 .category {
   font-size: .8rem;
   font-weight: 600;
-  color: var(--productive-color);
 }
 
 .response-title{
@@ -241,3 +238,22 @@ main {
   cursor: pointer;
 }
 
+.productive {
+  background: var(--productive-bg);
+  border: var(--productive-border);
+  color: var(--productive-color);
+}
+
+.pdot {
+  background: var(--productive-color);
+}
+
+.unproductive {
+  background: var(--unproductive-bg);
+  border: var(--unproductive-border);
+  color: var(--unproductive-color);
+}
+
+.udot {
+  background: var(--unproductive-color);
+}

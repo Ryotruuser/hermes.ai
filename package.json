@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^7.2.2"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.1",
+    "express": "^5.1.0"
   }
 }
