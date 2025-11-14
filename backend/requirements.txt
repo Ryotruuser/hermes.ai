@@ -6,3 +6,4 @@ tenacity
 python-docx
 pypdf
 gunicorn
+python-multipart

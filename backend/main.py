@@ -19,7 +19,7 @@ app = FastAPI()
 
 # Configuração do CORS
 origins = [
-    "https://hermes-ai-inky.vercel.app",
+    "https://hermes-ai-three.vercel.app/",
     "http://localhost:5173"
 ]
 
