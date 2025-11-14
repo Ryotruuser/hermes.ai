@@ -19,8 +19,9 @@ app = FastAPI()
 
 # Configuração do CORS
 origins = [
-    "https://hermes-ai-three.vercel.app/",
-    "http://localhost:5173"
+    "https://hermes-ai-three.vercel.app",
+    "http://localhost:5173",
+    "https://hermes-ai-qgfg.onrender.com"
 ]
 
 app.add_middleware(
