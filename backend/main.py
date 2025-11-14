@@ -10,7 +10,7 @@ from google import genai
 from google.genai import types
 
 try:
-    client = genai.Client(api_key=GEMINI_API_KEY)
+    client = genai.Client() 
 except Exception as e:
     print(f"Erro ao inicializar o cliente Gemini: {e}")
 
