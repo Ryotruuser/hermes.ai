@@ -1,4 +1,4 @@
-#⚡ Hermes AI: Classificador e Gerador de Respostas de E-mail
+# ⚡ Hermes AI: Classificador e Gerador de Respostas de E-mail
 
 Este projeto utiliza o FastAPI (Python) no backend para interagir com a API Google Gemini, classificando e-mails como "Produtivos", "Improdutivos" ou "Outros" e gerando sugestões de respostas profissionais. O frontend é uma aplicação web estática simples construída com HTML, CSS e JavaScript (Vite).
 
