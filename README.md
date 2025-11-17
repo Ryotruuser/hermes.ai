@@ -90,7 +90,8 @@ npm run dev
 
 ***Observação sobre CORS:*** A porta do servidor Vite (http://localhost:5173) deve estar listada no array origins do arquivo backend/main.py. Caso utilize outra porta para o frontend, será necessário ajustar esta lista.
 
-***Observação sobre utilização via vercel:*** O primeiro uso tende a demorar para analisar uma vez que o render coloca em suspensão o backend. 
+***Observação sobre utilização via vercel:*** O primeiro uso tende a demorar para analisar uma vez que o render coloca em suspensão o backend, caso receba erro "hermes está muito ocupado" basta tentar novamente, o problema pode
+ocorrer por suspensão do backend ou API do gemini estar overloaded no momento do uso.
 
 ### 🌐 Deploy em Nível Gratuito
 
